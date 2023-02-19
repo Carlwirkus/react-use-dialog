@@ -7,7 +7,7 @@ export function GenericDialog({ children }: { children: ReactNode }) {
   const { close, isOpen, reject, depth } = useDialogState();
 
   return (
-    <Transition.Root show={isOpen} as={Fragment}>
+    <Transition.Root show={isOpen} as={Fragment} appear>
       <Dialog
         as="div"
         className="relative z-10"

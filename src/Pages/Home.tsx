@@ -14,8 +14,9 @@ export function Home() {
   const [isLoading2, setIsLoading2] = useState(false);
 
   return (
-    <div className="flex items-center flex-col space-y-6">
+    <div className="flex items-center flex-col space-y-6 mt-6">
       <button
+        className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         type="button"
         onClick={() =>
           open({
@@ -28,6 +29,7 @@ export function Home() {
 
       <button
         type="button"
+        className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         onClick={async () => {
           setIsLoading(true);
           try {
@@ -47,6 +49,7 @@ export function Home() {
 
       <button
         type="button"
+        className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         onClick={async () => {
           setIsLoading2(true);
           try {
@@ -63,7 +66,11 @@ export function Home() {
         {isLoading2 && <ArrowPathIcon className="animate-spin " />}
       </button>
 
-      <button type="button" onClick={async () => openNestedDialog({})}>
+      <button
+        type="button"
+        className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        onClick={async () => openNestedDialog({})}
+      >
         open nested dialog
       </button>
     </div>

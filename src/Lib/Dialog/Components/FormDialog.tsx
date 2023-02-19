@@ -14,7 +14,7 @@ export function FormDialog() {
           htmlFor="name"
           className="block text-sm font-medium text-gray-700"
         >
-          Text to be resolved
+          Text will be logged to the console
         </label>
         <div className="mt-1 border-b border-gray-300 focus-within:border-indigo-600">
           <input
