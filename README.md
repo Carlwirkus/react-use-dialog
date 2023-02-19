@@ -48,7 +48,3 @@ An example of how you can construct a hook to invoke dialogs in React.
 2. Opens a dialog and triggers a loading state on the button
 3. Opens a dialog and waits for a form response which is then logged to the console
 4. Opens a dialog that can invoke a nested dialog
-
-# Todo
-
-- Animation on mount is broken since the comp
